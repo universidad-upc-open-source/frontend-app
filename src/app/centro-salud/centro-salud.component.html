@@ -1,0 +1,22 @@
+<p-table [value]="centroSaludList">
+  <ng-template pTemplate="header">
+      <tr>
+          <th>Código</th>
+          <th>Nombre</th>
+          <th>Tipo</th>
+          <th>Cal. Infraestructura</th>
+          <th>Cal. Servicios</th>
+          <th>Ambulancias</th>
+      </tr>
+  </ng-template>
+  <ng-template pTemplate="body" let-centro>
+      <tr>
+          <td>{{centro.codigo}}</td>
+          <td>{{centro.nombre}}</td>
+          <td>{{centro.tipo}}</td>
+          <td>{{centro.calificacionInfraestructura}}</td>
+          <td>{{centro.calificacionServicios}}</td>
+          <td>{{centro.ambulancias}}</td>
+      </tr>
+  </ng-template>
+</p-table>
